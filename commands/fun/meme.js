@@ -15,7 +15,7 @@ module.exports = {
             .setTitle(`From /r/${random}`)
             .setURL(`https://reddit.com/r/${random}`)
             .setTimestamp()
-            .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
+            .setFooter('Made by Drivet Development');
 
         message.channel.send(embed);
     }

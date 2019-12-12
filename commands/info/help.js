@@ -16,8 +16,8 @@ const embedhelp = new Discord.RichEmbed()
   .addField("**Experimental Commands**", "`-csgoranks`, `-image`")
   .addField("**Test commands for Coinsystem**", "`-coinflip`, `-formatcoins`, `-resetcoins`, `-mycoins`, `-daily`, `-mylevel`, `-buylevels`")
   .addField("**Moderation Commands**", "`-kick`, `-ban`, `-warn`, `-purge`")
-	.setTimestamp()
-	.setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
+  .setTimestamp()
+  .setFooter('Made by Drivet Development');
      message.channel.send(embedhelp);
     }
 }

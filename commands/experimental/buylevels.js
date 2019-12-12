@@ -81,7 +81,7 @@ module.exports = {
           .addField("**Levels**", amount)
           .addField("**Used coins**", coins)
           .setTimestamp()
-          .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
+          .setFooter('Made by Drivet Development');
             message.channel.send(embedlevels)
         });     
   }

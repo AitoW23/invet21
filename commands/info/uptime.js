@@ -37,7 +37,7 @@ module.exports = {
         .setColor("#0099ff")
         .addField('Bot has been online for', uptime)
         .setTimestamp()
-        .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
+        .setFooter('Made by Drivet Development');
 
     message.channel.send(serverembed);
     }
@@ -75,7 +75,7 @@ exports.run = (client, message, args) =>{
         .setColor("#0099ff")
         .addField('Bot has been online for', uptime)
         .setTimestamp()
-        .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
+        .setFooter('Made by Drivet Development');
     
     message.channel.send(serverembed);
 

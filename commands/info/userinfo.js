@@ -37,7 +37,7 @@ module.exports = {
         .addField('Joined server:', `${moment.utc(member.joinedAt).format('dddd, MMMM Do YYYY')}`, true)
         .addField('Roles:', member.roles.map(roles => `${roles.name}`).join(', '), false)
         .setTimestamp()
-        .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
+        .setFooter('Made by Drivet Development');
       
 
         message.channel.send(embed);

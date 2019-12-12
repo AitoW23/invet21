@@ -40,7 +40,7 @@ const noobEmbed = new Discord.RichEmbed()
 .setTitle("Ping")
 .setDescription(`Message Latency: \`${m.createdTimestamp - message.createdTimestamp}ms\`  \nAPI Latency: \`${Math.round(client.ping)}ms\` `)
 .setTimestamp()
-.setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
+.setFooter('Made by Drivet Development');
 
  m.edit(noobEmbed);
   }

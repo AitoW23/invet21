@@ -41,7 +41,7 @@ module.exports = {
         .addField("Total Roles", message.guild.roles.size, true)
         .addField("Creation Date", `${message.channel.guild.createdAt.toUTCString().substr(0, 16)} (${checkDays(message.channel.guild.createdAt)})`, true)
         .setTimestamp()
-        .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
+        .setFooter('Made by Drivet Development');
     message.channel.send({embed});
   }
 }

@@ -18,7 +18,7 @@ module.exports = {
 	      .setTitle('Usage for ban command')
         .addField("**Usage**", "-ban [@User] [Reason]")
         .setTimestamp()
-        .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
+        .setFooter('Made by Drivet Development');
          message.channel.send(embedban);
       }
       else if(com == "kick"){        
@@ -27,7 +27,7 @@ module.exports = {
 	      .setTitle('Usage for kick command')
         .addField("**Usage**", "-kick [@User] [Reason]")
         .setTimestamp()
-        .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
+        .setFooter('Made by Drivet Development');
          message.channel.send(embedkick);
       }
       else if(com == "purge" || com == "clear" || com == "nuke"){
@@ -36,7 +36,7 @@ module.exports = {
 	      .setTitle('Usage for '+com+' command')
         .addField("**Usage**", "-"+com+" [message amount]")
         .setTimestamp()
-        .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
+        .setFooter('Made by Drivet Development');
          message.channel.send(embedpurge);
       }
       else if(com == "report"){
@@ -45,7 +45,7 @@ module.exports = {
 	      .setTitle('Usage for warn command')
         .addField("**Usage**", "-report [@User] [Reason]")
         .setTimestamp()
-        .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
+        .setFooter('Made by Drivet Development');
          message.channel.send(embedreport);
       }
       else if(com == "warn"){
@@ -54,7 +54,7 @@ module.exports = {
 	      .setTitle('Usage for warn command')
         .addField("**Usage**", "-warn [@User] [Reason]")
         .setTimestamp()
-        .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
+        .setFooter('Made by Drivet Development');
          message.channel.send(embedwarn);
       }
       else if(com == "avatar"){
@@ -63,7 +63,7 @@ module.exports = {
 	      .setTitle('Usage for avatar command')
         .addField("**Usage**", "-avatar [@User]")
         .setTimestamp()
-        .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
+        .setFooter('Made by Drivet Development');
          message.channel.send(embedavatar);
       }
       else if(com == "userinfo"){
@@ -72,7 +72,7 @@ module.exports = {
 	      .setTitle('Usage for userinfo command')
         .addField("**Usage**", "-userinfo [@User]")
         .setTimestamp()
-        .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
+        .setFooter('Made by Drivet Development');
          message.channel.send(embeduserinfo);
       }
       else if(com == "play"){
@@ -81,7 +81,7 @@ module.exports = {
 	      .setTitle('Usage for play command')
         .addField("**Usage**", "-play [Youtube Link]")
         .setTimestamp()
-        .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
+        .setFooter('Made by Drivet Development');
          message.channel.send(embedplay);
       }
       else if(com == "image"){
@@ -90,7 +90,7 @@ module.exports = {
 	      .setTitle('Usage for image command')
         .addField("**Usage**", "-image [Name]")
         .setTimestamp()
-        .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
+        .setFooter('Made by Drivet Development');
          message.channel.send(embedimage);
       }
       else if(com == "coinflip"){
@@ -99,7 +99,7 @@ module.exports = {
 	      .setTitle('Usage for coinflip command')
         .addField("**Usage**", "-coinflip [Heads or Tails] [Coin amount]")
         .setTimestamp()
-        .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
+        .setFooter('Made by Drivet Development');
          message.channel.send(embedcoinflip);
       }
       else if(com == "csgoranks"){
@@ -108,7 +108,7 @@ module.exports = {
 	      .setTitle('Usage for csgoranks command')
         .addField("**Usage**", "-csgoranks [1-18]")
         .setTimestamp()
-        .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
+        .setFooter('Made by Drivet Development');
          message.channel.send(embedranks);
       }
       else if(com == "buylevels"){
@@ -117,7 +117,7 @@ module.exports = {
 	      .setTitle('Usage for buylevels command')
         .addField("**Usage**", "-buylevels [Level amount]")
         .setTimestamp()
-        .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
+        .setFooter('Made by Drivet Development');
          message.channel.send(embedlvl);
       }
       else if(com == "im"){
@@ -126,7 +126,7 @@ module.exports = {
 	      .setTitle('Usage for im command')
         .addField("**Usage**", "-im [text]")
         .setTimestamp()
-        .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
+        .setFooter('Made by Drivet Development');
          message.channel.send(embedim);
       }
       else{

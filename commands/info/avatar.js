@@ -15,7 +15,7 @@ module.exports = {
         .setTitle("Avatar")
         .setDescription("[Avatar URL link]("+mentionedUser.displayAvatarURL+")")
         .setTimestamp()
-        .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
+        .setFooter('Made by Drivet Development');
 
         message.channel.send(embed)
       

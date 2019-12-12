@@ -13,7 +13,7 @@ module.exports = {
     .setColor("#0099ff")
     .setImage(body.url)
     .setTimestamp()
-    .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
+    .setFooter('Made by Drivet Development');
   
     message.channel.send(dogembed)
     }
