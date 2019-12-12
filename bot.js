@@ -1,9 +1,7 @@
-const Discord = require("discord.js"); // We Call The Packages.
-// const PREFIX = "<"; // You can change this Prefix to whatever you want.
+const { Client, Collection, Discord } = require("discord.js");
 const PREFIX = process.env.PREFIX;
 
 var bot = new Discord.Client();
-const { Client, Collection, Discord } = require("discord.js");
 
 const client = new Client({
     disableEveryone: true
