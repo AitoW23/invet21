@@ -17,7 +17,7 @@ const embedhelp = new Discord.RichEmbed()
   .addField("**Test commands for Coinsystem**", "`-coinflip`, `-formatcoins`, `-resetcoins`, `-mycoins`, `-daily`, `-mylevel`, `-buylevels`")
   .addField("**Moderation Commands**", "`-kick`, `-ban`, `-warn`, `-purge`")
 	.setTimestamp()
-	.setFooter('Made by GhostSlayer#7959', 'https://cdn.ghostslayer.tk/web-assets/images/ghostslayer.png');
+	.setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
      message.channel.send(embedhelp);
     }
 }

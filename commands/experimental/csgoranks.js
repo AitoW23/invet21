@@ -107,7 +107,7 @@ module.exports = {
 	        .setTitle(rank)
           .setImage("https://raw.githubusercontent.com/SteamDatabase/GameTracking-CSGO/0e457516ba13817a45b6c2a1d262fe7d0599bcbc/csgo/pak01_dir/resource/flash/econ/status_icons/skillgroup" + choice + ".png")
           .setTimestamp()
-	        .setFooter('Made by GhostSlayer#7959', 'https://cdn.ghostslayer.tk/web-assets/images/ghostslayer.png');
+          .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
         
         message.channel.send(embedrank)
       }

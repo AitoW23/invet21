@@ -39,8 +39,8 @@ const noobEmbed = new Discord.RichEmbed()
 .setColor("#0099ff")
 .setTitle("Ping")
 .setDescription(`Message Latency: \`${m.createdTimestamp - message.createdTimestamp}ms\`  \nAPI Latency: \`${Math.round(client.ping)}ms\` `)
-  .setTimestamp()
-  .setFooter('Made by GhostSlayer#7959', 'https://cdn.ghostslayer.tk/web-assets/images/ghostslayer.png');
+.setTimestamp()
+.setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
 
  m.edit(noobEmbed);
   }

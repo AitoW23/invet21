@@ -86,9 +86,7 @@ module.exports = {
             .addField("**Level Tier**", tier)
             .addField("**Upcoming Tier**", tierUp+" (at level "+reqlvl+")")
             .setTimestamp()
-            .setFooter("Made by GhostSlayer#7959",
-            "https://cdn.ghostslayer.tk/web-assets/images/ghostslayer.png"
-            );
+            .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
             message.channel.send(embedlevels);
           });
         }
@@ -102,9 +100,7 @@ module.exports = {
             .addField("**Level**", level)
             .addField("**Level Tier**", tier)
             .setTimestamp()
-            .setFooter("Made by GhostSlayer#7959",
-            "https://cdn.ghostslayer.tk/web-assets/images/ghostslayer.png"
-            );
+            .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
             message.channel.send(embedlevels2);
           });
         }

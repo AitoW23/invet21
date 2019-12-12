@@ -36,8 +36,8 @@ module.exports = {
     let serverembed = new Discord.RichEmbed()
         .setColor("#0099ff")
         .addField('Bot has been online for', uptime)
-	      .setTimestamp()
-	      .setFooter('Made by GhostSlayer#7959', 'https://cdn.ghostslayer.tk/web-assets/images/ghostslayer.png');
+        .setTimestamp()
+        .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
 
     message.channel.send(serverembed);
     }
@@ -74,8 +74,8 @@ exports.run = (client, message, args) =>{
     let serverembed = new Discord.RichEmbed()
         .setColor("#0099ff")
         .addField('Bot has been online for', uptime)
-	      .setTimestamp()
-	      .setFooter('Made by GhostSlayer#7959', 'https://cdn.ghostslayer.tk/web-assets/images/ghostslayer.png');
+        .setTimestamp()
+        .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
     
     message.channel.send(serverembed);
 

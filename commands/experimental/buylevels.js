@@ -80,8 +80,8 @@ module.exports = {
 	        .setTitle('Amount of your bought levels')
           .addField("**Levels**", amount)
           .addField("**Used coins**", coins)
-	        .setTimestamp()
-	        .setFooter('Made by GhostSlayer#7959', 'https://cdn.ghostslayer.tk/web-assets/images/ghostslayer.png');
+          .setTimestamp()
+          .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
             message.channel.send(embedlevels)
         });     
   }

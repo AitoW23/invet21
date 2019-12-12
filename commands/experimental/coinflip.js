@@ -101,8 +101,8 @@ module.exports = {
 	          .setColor('#ff0000')
 	          .setTitle('Coinflip')
             .addField("**Coins**", "You don't have enough coins\nto coinflip with that amount!")
-	          .setTimestamp()
-	          .setFooter('Made by GhostSlayer#7959', 'https://cdn.ghostslayer.tk/web-assets/images/ghostslayer.png');
+            .setTimestamp()
+            .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
           
             if(coinsamt > coinshave){
               message.channel.send(errcoins);
@@ -118,8 +118,8 @@ module.exports = {
             .addField("**Bot flipped**", coinz)
             .addField("**Final**", "You lose!")
             .addField("**Coins**", "You lose "+coinsamount+" coins!")
-	          .setTimestamp()
-	          .setFooter('Made by GhostSlayer#7959', 'https://cdn.ghostslayer.tk/web-assets/images/ghostslayer.png');
+            .setTimestamp()
+            .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
           
             const embedlose2 = new Discord.RichEmbed()
 	          .setColor('#ff0000')
@@ -129,8 +129,8 @@ module.exports = {
             .addField("**Bot flipped**", coinz)
             .addField("**Final**", "You lose!")
             .addField("**Coins**", "You lose "+coinsamount+" coins!")
-	          .setTimestamp()
-	          .setFooter('Made by GhostSlayer#7959', 'https://cdn.ghostslayer.tk/web-assets/images/ghostslayer.png');
+            .setTimestamp()
+            .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
       
             const embedwin = new Discord.RichEmbed()
 	          .setColor('#00ff00')
@@ -140,8 +140,8 @@ module.exports = {
             .addField("**Bot flipped**", coinz)
             .addField("**Final**", "You won!")
             .addField("**Coins**", "You got "+coinsamount+" more coins!")
-	          .setTimestamp()
-	          .setFooter('Made by GhostSlayer#7959', 'https://cdn.ghostslayer.tk/web-assets/images/ghostslayer.png');
+            .setTimestamp()
+            .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
           
             const embedwin2 = new Discord.RichEmbed()
 	          .setColor('#00ff00')
@@ -151,8 +151,8 @@ module.exports = {
             .addField("**Bot flipped**", coinz)
             .addField("**Final**", "You won!")
             .addField("**Coins**", "You got "+coinsamount+" more coins!")
-	          .setTimestamp()
-	          .setFooter('Made by GhostSlayer#7959', 'https://cdn.ghostslayer.tk/web-assets/images/ghostslayer.png');
+            .setTimestamp()
+            .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
           
             if (choice != coinz) {
               message.channel.send(embedlose);

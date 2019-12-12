@@ -33,8 +33,8 @@ module.exports = {
 	        .setColor('#0099ff')
 	        .setTitle('Your coins')
           .addField("**Coins**", coinsx)
-	        .setTimestamp()
-	        .setFooter('Made by GhostSlayer#7959', 'https://cdn.ghostslayer.tk/web-assets/images/ghostslayer.png');
+          .setTimestamp()
+          .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
             message.channel.send(embedcoins)
         });     
   }

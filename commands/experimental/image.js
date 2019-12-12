@@ -29,15 +29,15 @@ function image(message, parts) {
 	        .setColor('#ff0000')
 	        .setTitle('ERROR 404')
           .addField("**Image Not Found**", "I didn't find image by your choice!\nPlease give another image choice.")
-	        .setTimestamp()
-	        .setFooter('Made by GhostSlayer#7959', 'https://cdn.ghostslayer.tk/web-assets/images/ghostslayer.png');
+          .setTimestamp()
+          .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
   
       const err2 = new Discord.RichEmbed()
 	        .setColor('#ff0000')
 	        .setTitle('ERROR')
           .addField("**URL LENGTH**", "URL LENGTH ERROR!")
-	        .setTimestamp()
-	        .setFooter('Made by GhostSlayer#7959', 'https://cdn.ghostslayer.tk/web-assets/images/ghostslayer.png');
+          .setTimestamp()
+          .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
   
       var options = {
         url: "https://results.dogpile.com/serp?qc=images&q=" + search,
@@ -67,8 +67,8 @@ function image(message, parts) {
 	        .setTitle("Given name: "+search)
           .setDescription('There may be some latency with loading the image')
           .setImage( urls[0] )
-	        .setTimestamp()
-	        .setFooter('Made by GhostSlayer#7959', 'https://cdn.ghostslayer.tk/web-assets/images/ghostslayer.png');
+          .setTimestamp()
+          .setFooter('Drivet Development', 'https://cdn.drivet.tk/web-assets/images/drivetlogo.png');
         message.channel.send(embedimg);
       });
 }
