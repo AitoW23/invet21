@@ -24,7 +24,7 @@ bot.on("message", function(message) {
 // Commands.
     if (command == "help") {
         var embedhelpmember = new Discord.RichEmbed()
-            .setAuthor("💬 Command List.")
+            .setAuthor("💬 Command Lista.")
             .addField(" - avatar", "Show your Avatar.")
             .addField(" - ping", "PING PONG.")
             .setColor(0x00FFEE)
