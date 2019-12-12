@@ -1,28 +1,31 @@
 {
-  "name": "commandojs",
+  "name": "discord.js-heroku",
   "version": "1.0.0",
-  "description": "",
+  "description": "An in-depth guide on deploying your Discord.js bot on Heroku",
   "main": "server.js",
+  "engines": {
+    "node": "8.x",
+    "npm": "*"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "build": "server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GhostSlayer/SlayBot.git"
+    "url": "git+https://github.com/synicalsyntax/discord.js-heroku.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "heroku",
+    "discord.js"
+  ],
+  "author": "synicalsyntax",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GhostSlayer/SlayBot/issues"
+    "url": "https://github.com/synicalsyntax/discord.js-heroku/issues"
   },
-  "homepage": "https://GhostSlayer/SlayBot#readme",
+  "homepage": "https://github.com/synicalsyntax/discord.js-heroku#readme",
   "dependencies": {
-    "discord.js": "^11.5.1",
-    "discord.js-commando": "^0.10.0",
-    "node-opus": "^0.3.2",
-    "ytdl-core": "^0.29.7"
+    "discord.js": "^11.3.0"
   }
 }
