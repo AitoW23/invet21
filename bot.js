@@ -43,7 +43,7 @@ const client = new Client({
         command.run(client, message, args);
       }
       catch(error) {
-        message.channel.send(`Something went wrong... ${err}`)
+        message.channel.send(`Something went wrong: ${err}`)
       }
   });
   
