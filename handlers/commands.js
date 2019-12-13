@@ -11,9 +11,6 @@ module.exports = (client) => {
     
         for (let file of commands) {
             let pull = require(`../commands/${dir}/${file}`);
-    
-            if (pull.aliases && Array.isArray(pull.aliases)) pull.aliases.forEach(alias => client.aliases.set(alias, pull.name));
-        }
     });
     
     console.log(table.toString());
