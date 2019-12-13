@@ -17,7 +17,7 @@ const client = new Client({
   client.on('ready', () => { //Startup
     console.log(`Hi, ${client.user.username} is now online and connected to database!`);
     client.user.setStatus('online');
-    client.user.setActivity(`slaybot.tk | -help`, {
+    client.user.setActivity(`slaybot.tk | -help | Shard: ${shard.id}`, {
       type: 'playing'
     });
   });

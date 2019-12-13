@@ -6,4 +6,4 @@ const shard = new ShardingManager('./bot.js', {
 
 shard.spawn(5);
 
-shard.on('launch', shard => console.log(`[SHARD] Shard ${shard.id}/${shard.totalShards}`));
+shard.on('launch', shard => console.log(`[SHARD] Shard ${shard.id}/5`));
