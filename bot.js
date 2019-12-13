@@ -13,14 +13,7 @@ const client = new Client({
   ["command"].forEach(handler => {
       require(`./handlers/commands.js`)(client);
   });
-  
-  client.on('ready', () => { //Startup
-    console.log(`Hi, ${client.user.username} is now online and connected to database!`);
-    client.user.setStatus('online');
-    client.user.setActivity(`slaybot.tk | -help | Shard: ${shard.id}`, {
-      type: 'playing'
-    });
-  });
+
   
   client.on("message", async message => {
       const prefix = '-';
