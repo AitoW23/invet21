@@ -9,6 +9,6 @@ const shard = new ShardingManager('./bot.js', {
   autoSpawn: true
 });
 
-shard.spawn(90);
+shard.spawn(20);
 
-shard.on('launch', shard => console.log(`[SHARD] Shard ${shard.id} of 90 is Online`));
+shard.on('launch', shard => console.log(`[SHARD] Shard ${shard.id} of 20 is Online`));
