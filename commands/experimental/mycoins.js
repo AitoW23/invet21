@@ -17,7 +17,6 @@ module.exports = {
 
       con.connect(err => {
         if(err) throw err;
-        return message.channel.send("Database OK!")
       });
       
       var id = message.author.id;
