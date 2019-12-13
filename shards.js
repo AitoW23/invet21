@@ -1,4 +1,4 @@
-const { Client, ShardingManager } = require('discord.js');
+const { Client } = require('discord.js');
 const { ShardingManager } = require('kurasuta');
 const { join } = require('path');
 const PREFIX = process.env.PREFIX;
