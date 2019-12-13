@@ -38,7 +38,7 @@ const m = await message.channel.send(exampleEmbed);
 const noobEmbed = new Discord.RichEmbed()
 .setColor("#0099ff")
 .setTitle("Ping")
-.setDescription(`Message Latency: \`${m.createdTimestamp - message.createdTimestamp}ms\`  \nAPI Latency: \`${Math.round(client.ping)}ms\` `)
+.setDescription(`Message Round Trip: \`${m.createdTimestamp - message.createdTimestamp}ms\`  \nDiscord Latency: \`${Math.round(client.ping)}ms\` `)
 .setTimestamp()
 .setFooter('Made by Drivet Development');
 
