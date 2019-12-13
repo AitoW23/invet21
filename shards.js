@@ -3,9 +3,6 @@ const { ShardingManager } = require('kurasuta');
 const { join } = require('path');
 const PREFIX = process.env.PREFIX;
 const sharder = new ShardingManager(join(__dirname, 'bot'), {
-});
-
-const shard = new ShardingManager('./bot.js', {
   token: process.env.BOT_TOKEN,
   autoSpawn: true
 });
