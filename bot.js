@@ -9,6 +9,15 @@ const client = new Client({
   
   client.commands = new Collection();
   client.aliases = new Collection();
+
+  client.on('ready', () => { //Startup
+    console.log(`Hi, ${client.user.username} is now online and connected to database!`);
+    client.user.setStatus('online');
+    client.user.setActivity(`slaybot.tk | -help`, {
+      type: 'playing'
+    });
+  });
+
   
   client.on("message", async message => {
       const prefix = '-';

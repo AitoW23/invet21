@@ -9,14 +9,6 @@ const shard = new ShardingManager('./bot.js', {
   autoSpawn: true
 });
 
-client.on('ready', () => { //Startup
-    console.log(`Hi, ${client.user.username} is now online and connected to database!`);
-    client.user.setStatus('online');
-    client.user.setActivity(`slaybot.tk | -help | Shard: ${shard.id}`, {
-      type: 'playing'
-    });
-  });
-
 shard.spawn(90);
 
-shard.on('launch', shard => console.log(`[SHARD] Shard ${shard.id}/90 Online`).catch(console.error));
+shard.on('launch', shard => console.log(`[SHARD] Shard ${shard.id} of 90 is Online`));
