@@ -1,12 +1,4 @@
 const { Client, Collection, Discord } = require("discord.js");
-const http = require('http');
-const path = require('path');
-const express = require('express');
-const shards = require('./shards.js');
-const app = express();
-app.get("/", (request, response) => {
-  response.sendStatus(200);
-});
 const PREFIX = process.env.PREFIX;
 
 
