@@ -1,4 +1,5 @@
 const { Client, Collection, Discord } = require("discord.js");
+const { BaseCluster } = require('kurasuta');
 const PREFIX = process.env.PREFIX;
 
 
@@ -18,6 +19,11 @@ const client = new Client({
     });
   });
 
+  module.exports = class extends BaseCluster {
+    launch() {
+      this.client.login('YOUR_TOKEN_HERE');
+    }
+  };
   
   client.on("message", async message => {
       const prefix = '-';

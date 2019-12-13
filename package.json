@@ -54,6 +54,7 @@
     "router": "^1.3.3",
     "catchasync.js": "^1.0.1",
     "mysql": "^2.17.1",
-    "node-fetch": "^2.1.1"
+    "node-fetch": "^2.1.1",
+    "kurasuta": "^1.1.4"
   }
 }
