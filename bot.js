@@ -10,11 +10,6 @@ const client = new Client({
   client.commands = new Collection();
   client.aliases = new Collection();
   
-  ["command"].forEach(handler => {
-      require(`./handlers/commands.js`)(client);
-  });
-
-  
   client.on("message", async message => {
       const prefix = '-';
     
