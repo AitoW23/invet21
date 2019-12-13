@@ -1,5 +1,4 @@
 const { Client, Collection, Discord } = require("discord.js");
-const { BaseCluster } = require('kurasuta');
 const PREFIX = process.env.PREFIX;
 
 
@@ -18,12 +17,6 @@ const client = new Client({
       type: 'playing'
     });
   });
-
-  module.exports = class extends BaseCluster {
-    launch() {
-      this.client.login('YOUR_TOKEN_HERE');
-    }
-  };
   
   client.on("message", async message => {
       const prefix = '-';
@@ -51,4 +44,4 @@ const client = new Client({
   });
   
   
-  client.login(process.env.BOT_TOKEN);
+  client.login(process.env.BOT_TOKEN);//wow so cool bot token. now its available for internet. not rly
