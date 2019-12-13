@@ -1,6 +1,6 @@
 const { ShardingManager } = require('discord.js');
 const shard = new ShardingManager('./bot.js', {
-  token: config.token,
+  token: process.env.BOT_TOKEN,
   autoSpawn: true
 });
 

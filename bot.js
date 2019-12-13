@@ -2,9 +2,6 @@ const { Client, Collection, Discord } = require("discord.js");
 const PREFIX = process.env.PREFIX;
 
 const client = new Client({
-    shardId: process.argv[1],
-    shardCount: process.argv[2],
-    fetchAllMembers: true,
     disableEveryone: true
   });
   
