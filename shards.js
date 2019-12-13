@@ -17,6 +17,6 @@ client.on('ready', () => { //Startup
     });
   });
 
-shard.spawn(5);
+shard.spawn(90);
 
-shard.on('launch', shard => console.log(`[SHARD] Shard ${shard.id}/5`));
+shard.on('launch', shard => console.log(`[SHARD] Shard ${shard.id}/90 Online`).catch(console.error));
