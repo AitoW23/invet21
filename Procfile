@@ -1,2 +1,2 @@
-web: node ping.js
+web: views/index.html
 worker: node shards.js
