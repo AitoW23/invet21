@@ -1,2 +1,2 @@
-web: node web.js
+web: npm index.html
 worker: node shards.js
