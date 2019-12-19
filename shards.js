@@ -1,15 +1,8 @@
 const { Client, ShardingManager } = require('discord.js');
-const http = require('http');
-const express = require('express');
-const app = express();
-app.get("/", (request, response) => {
-  console.log(Date.now() + " Ping Received");
-  response.sendStatus(200);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
 });
-app.listen(process.env.port);
-setInterval(() => {
-  http.get(`https://bot-slaybot.herokuapp.com`);
-}, 280000);
 
 const client = new Client({
     disableEveryone: true
