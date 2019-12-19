@@ -1,4 +1,7 @@
 const { Client, ShardingManager } = require('discord.js');
+server.listen(config.port, function () {
+  console.log('Express server listening on %d, in %s mode', config.port, app.get('env'));
+});
 
 const client = new Client({
     disableEveryone: true
