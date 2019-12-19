@@ -6,7 +6,7 @@ app.get("/", (request, response) => {
   console.log(Date.now() + " Ping Received");
   response.sendStatus(200);
 });
-app.listen('80');
+app.listen(process.env.port);
 setInterval(() => {
   http.get(`https://bot-slaybot.herokuapp.com`);
 }, 280000);
