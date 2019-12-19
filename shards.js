@@ -1,5 +1,8 @@
 const { Client, ShardingManager } = require('discord.js');
-const PREFIX = process.env.PREFIX;
+var http = require('http');
+setInterval(() => {
+    http.get('http://[app-name].herokuapp.com/');
+}, 1000*60*15);
 
 const client = new Client({
     disableEveryone: true
