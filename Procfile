@@ -1,2 +1,1 @@
-web: node /public
-worker: node shards.js
+web: node shards.js
