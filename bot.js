@@ -1,11 +1,5 @@
 const { Client, Collection, Discord } = require("discord.js");
 const PREFIX = process.env.PREFIX;
-const http = require('http');
-const express = require('express');
-const app = express();
-app.get("/", (request, response) => {
-  response.sendStatus(200);
-});
 
 
 const client = new Client({
