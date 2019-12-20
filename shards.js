@@ -2,7 +2,7 @@ const { Client, ShardingManager } = require('discord.js');
 const PORT = process.env.port || 3000;
 const express = require('express');
 const app = express();
-app.listen(PORT, () => {
+app.listen(PORT, (response) => {
     response.sendStatus(200);
     console.log(`Our app is running on port ${ PORT }`);
 });
