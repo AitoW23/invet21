@@ -1,12 +1,12 @@
 {
-  "name": "discord.js-example-bot",
-  "version": "1.0.0",
-  "description": "Example Bot by zarrttt_",
+  "name": "SlayBot",
+  "version": "NaN",
+  "description": "Free and reliable bot for Discord!",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
   },
-  "author": "zarrttt_",
+  "author": "Drivet",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",

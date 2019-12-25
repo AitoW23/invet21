@@ -80,10 +80,10 @@ module.exports = {
           var coinz = coins[Math.floor(Math.random() * coins.length)];
         
           var con = mysql.createConnection({
-            host: "remotemysql.com",
-            user: "CrS7XeHuCc",
-            password: "IdoUOupxrX",
-            database: "CrS7XeHuCc"
+            host: process.env.dbhost,
+            user: process.env.dbuser,
+            password: process.env.dbpass,
+            database: process.env.dbuser
           });
 
           con.connect(err => {
