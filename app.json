@@ -7,7 +7,7 @@
     "discord"
   ],
   "website": "https://slaybot.tk",
-  "repository": "https://github.com/GhostSlayer/SlayBot"
+  "repository": "https://github.com/GhostSlayer/SlayBot",
   "env": {
     "BOT_TOKEN": {
       "description": "A Secret Bot Token, Used To Login The BOT. Get The Token In Your App Settings.",
