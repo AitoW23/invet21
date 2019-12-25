@@ -8,7 +8,7 @@ app.listen(PORT, (response) => {
 });
 
 var con = mysql.createConnection({
-  host: `process.env.dbhost`,
+  host: "remotemysql.com",
   user: `process.env.dbuser`,
   password: `process.env.dbpass`,
   database: `process.env.dbuser`
