@@ -7,13 +7,6 @@ module.exports = {
     name: "coinflip",
     description: "...",
     run: (client, message, args) => {
-
-      var con = mysql.createConnection({
-        host: `process.env.dbhost`,
-        user: `process.env.dbuser`,
-        password: `process.env.dbpass`,
-        database: `process.env.dbuser`
-      });
       
       const embederr = new Discord.RichEmbed()
 	        .setColor('#ff0000')
@@ -85,13 +78,6 @@ module.exports = {
           "Tails"
         ];
           var coinz = coins[Math.floor(Math.random() * coins.length)];
-        
-          var con = mysql.createConnection({
-            host: `process.env.dbhost`,
-            user: `process.env.dbuser`,
-            password: `process.env.dbpass`,
-            database: `process.env.dbuser`
-          });
         
           var id = message.author.id;
       

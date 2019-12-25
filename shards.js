@@ -8,10 +8,10 @@ app.listen(PORT, (response) => {
 });
 
 var con = mysql.createConnection({
-  host: "remotemysql.com",
-  user: `process.env.dbuser`,
-  password: `process.env.dbpass`,
-  database: `process.env.dbuser`
+  host: process.env.dbhost,
+  user: process.env.dbuser,
+  password: process.env.dbpass,
+  database: process.env.dbuser
 });
 
 con.connect(err => {

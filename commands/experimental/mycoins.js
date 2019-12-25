@@ -8,13 +8,6 @@ module.exports = {
     description: "...",
     run: (client, message, args) => {
       
-      var con = mysql.createConnection({
-        host: `process.env.dbhost`,
-        user: `process.env.dbuser`,
-        password: `process.env.dbpass`,
-        database: `process.env.dbuser`
-      });
-      
       var id = message.author.id;
       
       con.query(`SELECT * FROM userCoins WHERE userID = '${id}'`, (err, rows) => {

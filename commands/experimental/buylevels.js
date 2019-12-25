@@ -7,13 +7,6 @@ module.exports = {
     name: "buylevels",
     description: "...",
     run: (client, message, args) => {
-
-      var con = mysql.createConnection({
-        host: `process.env.dbhost`,
-        user: `process.env.dbuser`,
-        password: `process.env.dbpass`,
-        database: `process.env.dbuser`
-      });
       
       if(!args[0]){
         return message.channel.send("Please provide amount of levels to buy!")
