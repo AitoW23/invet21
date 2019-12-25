@@ -7,18 +7,12 @@ module.exports = {
     name: "buylevels",
     description: "...",
     run: (client, message, args) => {
-      
-      var con = mysql.createConnection({
-        host: process.env.dbhost,
-        user: process.env.dbuser,
-        password: process.env.dbpass,
-        database: process.env.dbuser
-      });
 
-      con.connect(err => {
-        if(err) throw err;
-        console.log("Error connecting the database")
-        client.destroy()
+      var con = mysql.createConnection({
+        host: `process.env.dbhost`,
+        user: `process.env.dbuser`,
+        password: `process.env.dbpass`,
+        database: `process.env.dbuser`
       });
       
       if(!args[0]){

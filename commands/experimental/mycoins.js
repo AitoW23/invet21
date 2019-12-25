@@ -9,14 +9,10 @@ module.exports = {
     run: (client, message, args) => {
       
       var con = mysql.createConnection({
-        host: process.env.dbhost,
-        user: process.env.dbuser,
-        password: process.env.dbpass,
-        database: process.env.dbuser
-      });
-
-      con.connect(err => {
-        if(err) throw err;
+        host: `process.env.dbhost`,
+        user: `process.env.dbuser`,
+        password: `process.env.dbpass`,
+        database: `process.env.dbuser`
       });
       
       var id = message.author.id;
