@@ -1,7 +1,6 @@
 const { Client, Collection, Discord } = require("discord.js");
 const PREFIX = process.env.PREFIX;
 
-
 const client = new Client({
     disableEveryone: true
   });
