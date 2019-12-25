@@ -1,15 +1,13 @@
 {
-  "name": "Discord.js Example Bot",
-  "description": "Example Bot For Discord, Using Discord.js Library.",
+  "name": "SlayBot",
+  "description": "Free and reliable bot for Discord!",
   "keywords": [
     "node",
     "heroku",
     "discord"
   ],
-  "website": "https://small-sharp-tool.com/",
-  "repository": "https://github.com/fschxspam/discord.js-example-bot",
-  "logo": "https://discord.js.org/static/logo-square.png",
-  "success_url": "/welcome",
+  "website": "https://slaybot.tk",
+  "repository": "https://github.com/GhostSlayer/SlayBot"
   "env": {
     "BOT_TOKEN": {
       "description": "A Secret Bot Token, Used To Login The BOT. Get The Token In Your App Settings.",
