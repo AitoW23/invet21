@@ -46,6 +46,5 @@ const client = new Client({
         message.channel.send("An unknown error occured. Please contact system admin")
       }
   });
-  
-  
-  client.login(process.env.BOT_TOKEN);//wow so cool bot token. now its available for internet. not rly
+
+  client.login(process.env.BOT_TOKEN);
