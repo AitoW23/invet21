@@ -55,6 +55,7 @@
     "catchasync.js": "^1.0.1",
     "mysql": "^2.17.1",
     "node-fetch": "^2.1.1",
-    "kurasuta": "^1.1.4"
+    "kurasuta": "^1.1.4",
+    "util": "^0.12.1"
   }
 }
