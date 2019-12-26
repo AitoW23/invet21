@@ -1,4 +1,5 @@
-const { Client, ShardingManager } = require('discord.js');
+const { Client, Collection, Discord } = require("discord.js");
+const client = new Client({ disableEveryone: true });
 const mysql = require('mysql');
 const PORT = process.env.port || 3000;
 const express = require('express');
@@ -26,9 +27,6 @@ client.on('ready', () => { //Startup
   });
 });
 
-const client = new Client({
-    disableEveryone: true
-  });
 const shard = new ShardingManager('./bot.js', {
   token: process.env.BOT_TOKEN,
   autoSpawn: true
