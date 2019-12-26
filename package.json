@@ -1,6 +1,6 @@
 {
   "name": "SlayBot",
-  "version": "NaN",
+  "version": "1",
   "description": "Free and reliable bot for Discord!",
   "main": "bot.js",
   "scripts": {
