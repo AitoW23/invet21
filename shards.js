@@ -3,9 +3,6 @@ const mysql = require('mysql');
 const PORT = process.env.port || 3000;
 const express = require('express');
 const app = express();
-app.listen(PORT, (response) => {
-    console.log(`Our app is running on port ${ PORT }`);
-});
 const client = new Client({
   disableEveryone: true
 });
@@ -19,14 +16,7 @@ var con = mysql.createConnection({
 
 con.connect(err => {
   if(err) throw err;
-  if(err) console.log('Failed to boot the database,');
-});
-
-client.on('ready', () => { //Startup
-  client.user.setStatus('online');
-  client.user.setActivity(`slaybot.tk | -help | Shard ${shard.id}`, {
-    type: 'playing'
-  });
+  if(err) console.log('Failed to boot the database');
 });
 
 const shard = new ShardingManager('./bot.js', {
