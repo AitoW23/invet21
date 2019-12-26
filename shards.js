@@ -24,12 +24,6 @@ const shard = new ShardingManager('./bot.js', {
   autoSpawn: true
 });
 
-shard.spawn(6);
+shard.spawn(20);
 
 shard.on('launch', shard => console.log(`[SHARD] Shard ${shard.id} is rebooted`));
-
-client.on('ready', () => { //Startup
-  client.user.setStatus('online');
-  client.user.setActivity(`slaybot.tk | -help | Shard ${shard.id}`, {
-  type: 'playing'
-});
