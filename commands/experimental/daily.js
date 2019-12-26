@@ -20,7 +20,6 @@ module.exports = {
       
       con.connect(err => {
         if(err) throw err;
-        if(err) console.log('Failed to boot the database');
       });
       
       var id = message.author.id;
