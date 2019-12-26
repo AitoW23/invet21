@@ -14,11 +14,13 @@ const client = new Client({
     require(`./handlers/commands.js`)(client);
 });
 
-client.on('ready', () => { //Startup
-  client.user.setStatus('online');
-  client.user.setActivity(`slaybot.tk | -help`, {
-  type: 'playing'
-});
+
+  client.on('ready', () => { //Startup
+    client.user.setStatus('online');
+    client.user.setActivity(`slaybot.tk | -help`, {
+      type: 'playing'
+    });
+  });
   
   client.on("message", async message => {
       const prefix = '-';

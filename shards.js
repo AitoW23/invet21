@@ -1,11 +1,7 @@
 const { Client, ShardingManager } = require('discord.js');
 const mysql = require('mysql');
-const PORT = process.env.port || 3000;
 const express = require('express');
 const app = express();
-const client = new Client({
-  disableEveryone: true
-});
 
 var con = mysql.createConnection({
   host: process.env.dbhost,
@@ -16,14 +12,18 @@ var con = mysql.createConnection({
 
 con.connect(err => {
   if(err) throw err;
-  if(err) console.log('Failed to boot the database');
+  console.log("Error connecting the database")
+  client.destroy()
 });
 
+const client = new Client({
+    disableEveryone: true
+  });
 const shard = new ShardingManager('./bot.js', {
   token: process.env.BOT_TOKEN,
   autoSpawn: true
 });
 
-shard.spawn(20);
+shard.spawn(21);
 
 shard.on('launch', shard => console.log(`[SHARD] Shard ${shard.id} is rebooted`));
