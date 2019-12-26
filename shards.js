@@ -3,17 +3,6 @@ const mysql = require('mysql');
 const express = require('express');
 const app = express();
 
-var con = mysql.createConnection({
-  host: process.env.dbhost,
-  user: process.env.dbuser,
-  password: process.env.dbpass,
-  database: process.env.dbuser
-});
-
-con.connect(err => {
-  if(err) throw err;
-});
-
 const client = new Client({
     disableEveryone: true
   });
