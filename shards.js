@@ -16,8 +16,6 @@ var con = mysql.createConnection({
 
 con.connect(err => {
   if(err) throw err;
-  console.log("Error connecting the database")
-  client.destroy()
 });
 
 const client = new Client({
