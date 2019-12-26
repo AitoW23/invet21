@@ -16,6 +16,14 @@ var con = mysql.createConnection({
 
 con.connect(err => {
   if(err) throw err;
+  if(err) console.log('Failed to boot the database');
+});
+
+client.on('ready', () => { //Startup
+  client.user.setStatus('online');
+  client.user.setActivity(`slaybot.tk | -help`, {
+    type: 'playing'
+  });
 });
 
 const client = new Client({

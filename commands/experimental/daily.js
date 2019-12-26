@@ -10,6 +10,18 @@ module.exports = {
     name: "daily",
     description: "...",
     run: (client, message, args) => {
+
+      var con = mysql.createConnection({
+        host: process.env.dbhost,
+        user: process.env.dbuser,
+        password: process.env.dbpass,
+        database: process.env.dbuser
+      });
+      
+      con.connect(err => {
+        if(err) throw err;
+        if(err) console.log('Failed to boot the database');
+      });
       
       var id = message.author.id;
       

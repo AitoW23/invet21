@@ -7,6 +7,18 @@ module.exports = {
     name: "buylevels",
     description: "...",
     run: (client, message, args) => {
+
+      var con = mysql.createConnection({
+        host: process.env.dbhost,
+        user: process.env.dbuser,
+        password: process.env.dbpass,
+        database: process.env.dbuser
+      });
+      
+      con.connect(err => {
+        if(err) throw err;
+        if(err) console.log('Failed to boot the database');
+      });
       
       if(!args[0]){
         return message.channel.send("Please provide amount of levels to buy!")
