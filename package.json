@@ -1,10 +1,10 @@
 {
   "name": "SlayBot",
-  "version": "NaN",
+  "version": "1.0.0",
   "description": "Free and reliable bot for Discord!",
   "main": "bot.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "node index.html"
   },
   "author": "Drivet",
   "license": "MIT",
