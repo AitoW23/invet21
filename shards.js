@@ -1,8 +1,10 @@
 const { Client, ShardingManager } = require('discord.js');
+const http = reqiore('http');
 const mysql = require('mysql');
 const express = require('express');
 const app = express();
 
+require('http').createServer().listen(3000)
 const client = new Client({
     disableEveryone: true
   });

@@ -13,7 +13,7 @@ const embedhelp = new Discord.RichEmbed()
   .addField("**User/Info Commands**", "`-avatar`, `-userinfo`, `-serverinfo`")
 	.addField("**Funny Commands**", "`-meme`, `-dog`, `-cat`, `-im`")
   .addField("**Experimental Commands**", "`-csgoranks`, `-image`")
-  .addField("**Test commands for Coinsystem**", "`-coinflip`, `-formatcoins`, `-resetcoins`, `-mycoins`, `-daily`, `-mylevel`, `-buylevels`")
+  .addField("**Coinsystem Commands**", "`-coinflip`, `-formatcoins`, `-resetcoins`, `-mycoins`, `-daily`, `-mylevel`, `-buylevels`")
   .addField("**Moderation Commands**", "`-kick`, `-ban`, `-warn`, `-purge`")
   .setTimestamp()
   .setFooter('Made by Drivet Development');
