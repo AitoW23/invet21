@@ -12,14 +12,15 @@ module.exports = {
     run: (client, message, args) => {
 
       var con = mysql.createConnection({
-        host: "remotemysql.com",
-        user: "CrS7XeHuCc",
-        password: "IdoUOupxrX",
-        database: "CrS7XeHuCc"
+        host: process.env.dbhost,
+        user: process.env.dbuser,
+        password: process.env.dbpass,
+        database: process.env.dbuser
       });
       
       con.connect(err => {
         if(err) throw err;
+        if(err) console.log("Database error:", err);
       });
       
       var id = message.author.id;
