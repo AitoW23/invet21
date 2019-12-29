@@ -14,20 +14,6 @@ const client = new Client({
     require(`./handlers/commands.js`)(client);
 });
 
-con.connect(err => {
-  if(err) throw err;
-});
-
-client.on("error", (e) => console.error(e));
-client.on('error', console.error);
-client.on("warn", (e) => console.warn(e));
-client.on("debug", (e) => console.info(e));
-
-client.on('error', err => {
-  console.error(err);
-  process.exit(1);
-});
-
   client.on('ready', () => { //Startup
     client.user.setStatus('online');
     client.user.setActivity(`v1 | slaybot.tk | -help`, {
@@ -56,7 +42,7 @@ client.on('error', err => {
         command.run(client, message, args);
       }
       catch(error) {
-        message.channel.send("An unknown error occured.", err )
+        message.channel.send("An unknown error occured.")
       }
   });
 
