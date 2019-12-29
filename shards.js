@@ -1,5 +1,5 @@
 const { Client, ShardingManager } = require('discord.js');
-const http = reqiore('http');
+const http = require('http');
 const mysql = require('mysql');
 const express = require('express');
 const app = express();
