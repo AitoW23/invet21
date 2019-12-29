@@ -4,8 +4,7 @@
   "description": "Free and reliable bot for Discord!",
   "main": "bot.js",
   "scripts": {
-    "start": "node build/main.js",
-    "build": "next build && backpack build"
+    "start": "node shards.js",
   },
   "author": "Drivet",
   "license": "MIT",
