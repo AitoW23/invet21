@@ -17,7 +17,7 @@ const client = new Client({
 
   client.on('ready', () => { //Startup
     client.user.setStatus('online');
-    client.user.setActivity(`slaybot.tk | -help`, {
+    client.user.setActivity(`v1 | slaybot.tk | -help`, {
       type: 'playing'
     });
   });
