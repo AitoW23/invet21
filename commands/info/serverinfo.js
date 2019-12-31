@@ -26,7 +26,8 @@ module.exports = {
         "amsterdam": ":flag_nl: Amsterdam",
         "hongkong": ":flag_hk: Hong Kong",
         "russia": ":flag_ru: Russia",
-        "southafrica": ":flag_za:  South Africa"
+        "southafrica": ":flag_za:  South Africa",
+        "europe": ":flag_eu: Central Europe"
     };
     const embed = new Discord.RichEmbed()
         .setAuthor(message.guild.name, message.guild.iconURL)
