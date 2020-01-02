@@ -15,7 +15,7 @@ module.exports = {
             .setTitle(`From /r/${random}`)
             .setURL(`https://reddit.com/r/${random}`)
             .setTimestamp()
-            .setFooter('Made by Drivet Development');
+            .setFooter('Made by Invet Development');
 
         message.channel.send(embed);
     }
