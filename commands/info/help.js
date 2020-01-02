@@ -16,7 +16,7 @@ const embedhelp = new Discord.RichEmbed()
   .addField("**Coinsystem Commands**", "`-coinflip`, `-formatcoins`, `-resetcoins`, `-mycoins`, `-daily`, `-mylevel`, `-buylevels`")
   .addField("**Moderation Commands**", "`-kick`, `-ban`, `-warn`, `-purge`")
   .setTimestamp()
-  .setFooter('Made by Drivet Development');
+  .setFooter('Made by Invet Development');
      message.channel.send(embedhelp);
     }
 }
