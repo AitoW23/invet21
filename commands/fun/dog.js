@@ -13,7 +13,7 @@ module.exports = {
     .setColor("#0099ff")
     .setImage(body.url)
     .setTimestamp()
-    .setFooter('Made by Drivet Development');
+    .setFooter('Made by Invet Development');
   
     message.channel.send(dogembed)
     }
