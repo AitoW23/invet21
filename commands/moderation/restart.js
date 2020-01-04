@@ -1,8 +1,8 @@
 exports.run = async (client, message, args) => {
-    let ownerID = "400703871586886914";
+    let ownerID = "304264050647498772";
     if (message.author.id == ownerID) {
     client.destroy()
-    .then(() => client.login('YOUR-BOT-TOKEN'))
+    .then(() => client.login(''))
     .then(() => message.channel.send(`The bot was successfully restarted!`));
     }
     else {
