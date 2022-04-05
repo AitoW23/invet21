@@ -11,11 +11,11 @@
   "env": {
     "BOT_TOKEN": {
       "description": "A Secret Bot Token, Used To Login The BOT. Get The Token In Your App Settings.",
-      "value": ""
+      "value": "NjYzODI0NDIyMjgwNDk1MTA1.XhOIqw.otireVxUUh8cFy5CGML5hkGjLm8"
     },
     "PREFIX": {
       "description": "A Prefix To Run Your Bot Commands.",
-      "value": ""
+      "value": "!"
     }
   },
   "buildpacks": [
